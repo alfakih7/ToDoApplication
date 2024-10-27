@@ -1,0 +1,58 @@
+/* Styles for Todo, TodoItem, and TodoList components */
+.todo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    margin: -170px auto 0; /* Offset to avoid overlapping with header */
+}
+
+.list {
+    background-color: #cfdedb;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(99, 175, 161, 0.5);
+    width: 100%;
+    max-width: 530px;
+    padding: 20px;
+}
+
+.todoitem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    background-color: #63afa1;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 18px;
+}
+
+.itemName {
+    font-weight: bold;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin-top: 10px;
+}
+/* Add this to your todolist.module.css */
+.todoButton {
+    background-color: #63afa1;  /* Your desired button background color */
+    color: white;                /* Button text color */
+    border: none;                /* Remove border */
+    border-radius: 5px;         /* Add border radius */
+    padding: 10px 15px;         /* Add padding */
+    cursor: pointer;             /* Change cursor on hover */
+    font-size: 16px;            /* Font size */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.todoButton:hover {
+    background-color: #0c4b45; /* Change color on hover */
+}
